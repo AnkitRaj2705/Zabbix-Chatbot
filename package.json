@@ -1,0 +1,35 @@
+{
+  "name": "whatsapp-clone",
+  "version": "1.0.0",
+  "description": "A modern WhatsApp clone built with vanilla HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 3000 -c-1",
+    "dev": "npx live-server --port=3000",
+    "build": "echo 'No build process needed for vanilla JS app'",
+    "serve": "python3 -m http.server 3000"
+  },
+  "keywords": [
+    "whatsapp",
+    "chat",
+    "messaging",
+    "web-app",
+    "javascript",
+    "css",
+    "html"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/whatsapp-clone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/whatsapp-clone/issues"
+  },
+  "homepage": "https://github.com/yourusername/whatsapp-clone#readme"
+}

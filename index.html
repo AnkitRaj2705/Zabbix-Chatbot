@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="Profile" class="profile-pic">
+                    <span class="user-name">My Profile</span>
+                </div>
+                <div class="header-actions">
+                    <i class="fas fa-circle-notch"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search or start new chat" id="searchInput">
+                </div>
+            </div>
+            
+            <div class="contacts-list" id="contactsList">
+                <!-- Contacts will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Main Chat Area -->
+        <div class="main-chat">
+            <div class="chat-header" id="chatHeader">
+                <div class="chat-info">
+                    <img src="https://via.placeholder.com/40" alt="Contact" class="contact-pic">
+                    <div class="contact-details">
+                        <h3 class="contact-name">Select a chat</h3>
+                        <span class="contact-status">Click on a contact to start messaging</span>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-paperclip"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <div class="welcome-content">
+                        <img src="https://via.placeholder.com/200" alt="WhatsApp" class="welcome-logo">
+                        <h2>WhatsApp Web</h2>
+                        <p>Send and receive messages without keeping your phone online.</p>
+                        <p>Use WhatsApp on up to 4 linked devices and 1 phone at the same time.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container" id="chatInputContainer" style="display: none;">
+                <div class="chat-input">
+                    <i class="fas fa-smile emoji-btn" id="emojiBtn"></i>
+                    <i class="fas fa-paperclip attach-btn"></i>
+                    <input type="text" placeholder="Type a message" id="messageInput">
+                    <button class="send-btn" id="sendBtn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Emoji Picker -->
+    <div class="emoji-picker" id="emojiPicker" style="display: none;">
+        <div class="emoji-grid">
+            <span class="emoji">😀</span><span class="emoji">😃</span><span class="emoji">😄</span><span class="emoji">😁</span>
+            <span class="emoji">😆</span><span class="emoji">😅</span><span class="emoji">😂</span><span class="emoji">🤣</span>
+            <span class="emoji">😊</span><span class="emoji">😇</span><span class="emoji">🙂</span><span class="emoji">🙃</span>
+            <span class="emoji">😉</span><span class="emoji">😌</span><span class="emoji">😍</span><span class="emoji">🥰</span>
+            <span class="emoji">😘</span><span class="emoji">😗</span><span class="emoji">😙</span><span class="emoji">😚</span>
+            <span class="emoji">😋</span><span class="emoji">😛</span><span class="emoji">😝</span><span class="emoji">😜</span>
+            <span class="emoji">🤪</span><span class="emoji">🤨</span><span class="emoji">🧐</span><span class="emoji">🤓</span>
+            <span class="emoji">😎</span><span class="emoji">🤩</span><span class="emoji">🥳</span><span class="emoji">😏</span>
+            <span class="emoji">❤️</span><span class="emoji">💕</span><span class="emoji">💖</span><span class="emoji">💗</span>
+            <span class="emoji">👍</span><span class="emoji">👎</span><span class="emoji">👌</span><span class="emoji">✌️</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
